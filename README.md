@@ -4,6 +4,8 @@
 当你的测试机通过adb连接到你到Mac电脑的时候可以用这个工具截图。
 
 ## 用法
+
+### 截取手机屏幕到当前目录
 ```bash
 caphone screen.png
 ```
@@ -16,6 +18,25 @@ open .
 ```
 open screen.png
 ```
+### 录制屏幕到当前目录
+
+caphone [文件名].mp4 [录制时间：默认120秒]
+
+例如：
+
+```bash
+caphone in.mp4 60
+```
+
+如果你安装了ffmpeg你就可以将这个视频转gif了
+
+```bash
+ffmpeg -r 15 -i in.mp4 -s 270x600 out.gif
+```
+
+-r 帧数
+
+-s 大小
 
 ## 安装和卸载
 
