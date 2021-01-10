@@ -8,7 +8,7 @@ fi
 if [ ! -n "$1" ] ;then
     time=120
 else
-    time=$1
+    time=$2
 fi
 
 if [ "${out_file##*.}"x = "mp4"x ];then
