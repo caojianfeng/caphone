@@ -5,7 +5,7 @@ else
     out_file=$1
 fi
 
-if [ ! -n "$1" ] ;then
+if [ ! -n "$2" ] ;then
     time=120
 else
     time=$2
